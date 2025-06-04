@@ -1,5 +1,40 @@
+# Configuración personalizada (tu versión)
 target/
 *.log
 .env
 .DS_Store
+
+# Configuración del proyecto original
+HELP.md
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IDEs ###
+# IntelliJ (combinado)
 .idea/
+*.iws
+*.iml
+*.ipr
+
+# STS/Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# VS Code
+.vscode/
