@@ -1,3 +1,17 @@
+# Mi Versión del Ecommerce en Kubernetes
+
+## Descripción
+Adaptación del proyecto original [SelimHorri/ecommerce-microservice-backend-app](https://github.com/SelimHorri/ecommerce-microservice-backend-app) con:
+
+- ✅ Reestructuración para Kubernetes
+- ✅ Configuración CI/CD personalizada
+- ✅ Documentación ampliada
+
+## Tecnologías
+- Spring Boot - Kubernetes - Docker - Helm
+
+## Original Project
+
 # e-Commerce-boot μServices 
 
 ## Important Note: This project's new milestone is to move The whole system to work on Kubernetes, so stay tuned.
