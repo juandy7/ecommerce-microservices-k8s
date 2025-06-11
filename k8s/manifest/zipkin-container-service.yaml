@@ -9,7 +9,7 @@ metadata:
     io.kompose.service: zipkin-container
   name: zipkin-container
 spec:
-  type: ClusterIP  # <-- Cambiado a ClusterIP
+  type: ClusterIP  
   ports:
     - name: "9411"
       port: 9411
