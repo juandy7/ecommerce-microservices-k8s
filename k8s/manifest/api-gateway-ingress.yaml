@@ -5,6 +5,10 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
+  tls:
+    - hosts:
+        - api.local
+      secretName: mi-tls-secret
   rules:
     - host: api.local
       http:
