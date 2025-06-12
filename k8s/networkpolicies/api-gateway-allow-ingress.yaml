@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-only-ingress-to-api-gateway
+spec:
+  podSelector:
+    matchLabels:
+      io.kompose.service: api-gateway-container
+  ingress:
+    - from:
+        - ipBlock:
+            cidr: 0.0.0.0/0
+  policyTypes:
+    - Ingress

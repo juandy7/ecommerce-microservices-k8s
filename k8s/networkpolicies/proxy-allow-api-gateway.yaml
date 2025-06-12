@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-only-api-gateway-to-proxy
+spec:
+  podSelector:
+    matchLabels:
+      io.kompose.service: proxy-client-container
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              io.kompose.service: api-gateway-container
+  policyTypes:
+    - Ingress
