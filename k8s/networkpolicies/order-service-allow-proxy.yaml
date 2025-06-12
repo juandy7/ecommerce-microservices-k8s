@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-only-proxy-to-order-service
+spec:
+  podSelector:
+    matchLabels:
+      io.kompose.service: order-service-container
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              io.kompose.service: proxy-client-container
+  policyTypes:
+    - Ingress
